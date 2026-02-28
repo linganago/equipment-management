@@ -1,0 +1,14 @@
+.badge {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 3px 10px; border-radius: 20px;
+  font-size: 11px; font-weight: 600;
+}
+.badge::before {
+  content: ''; width: 5px; height: 5px; border-radius: 50%;
+}
+.badge-active      { background: var(--green-dim);  color: var(--green);  }
+.badge-active::before { background: var(--green); }
+.badge-inactive    { background: var(--border);     color: var(--text3);  }
+.badge-inactive::before { background: var(--text3); }
+.badge-maintenance { background: var(--amber-dim);  color: var(--amber);  }
+.badge-maintenance::before { background: var(--amber); }
